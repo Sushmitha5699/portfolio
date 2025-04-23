@@ -7,12 +7,12 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "main"
-    label: "Main Page"
+  - name: "homepage"
+    label: "Homepage"
     files:
-      - label: "Homepage"
-        name: "homepage"
+      - label: "Main Page"
+        name: "main"
         file: "index.html"
         fields:
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Paragraph", name: "paragraph", widget: "text" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
