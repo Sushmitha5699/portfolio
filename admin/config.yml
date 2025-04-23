@@ -7,7 +7,7 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: homepage
+  - name: "homepage"
     label: "Homepage Content"
     files:
       - file: "index.html"
@@ -15,8 +15,8 @@ collections:
         name: "main"
         fields:
           - label: "Title"
-            name: title
-            widget: string
+            name: "title"
+            widget: "string"
           - label: "Intro Text"
-            name: intro
-            widget: text
+            name: "intro"
+            widget: "text"
