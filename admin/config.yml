@@ -10,13 +10,9 @@ collections:
   - name: "homepage"
     label: "Homepage Content"
     files:
-      - file: "index.html"
-        label: "Main Page"
+      - label: "Main Page"
         name: "main"
+        file: "index.html"
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Intro Text"
-            name: "intro"
-            widget: "text"
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro Text", name: "intro", widget: "text"}
