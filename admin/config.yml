@@ -1,9 +1,8 @@
 backend:
-  name: github
-  repo: Sushmitha5699/portfolio
-  branch: main
+  name: git-gateway
+  branch: main # or 'master' if your repo uses that
 
-media_folder: "assets/uploads" # where uploaded images go
+media_folder: "assets/uploads" # where uploaded images will go inside your repo
 public_folder: "/assets/uploads"
 
 collections:
