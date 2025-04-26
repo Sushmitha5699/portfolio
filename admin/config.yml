@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
-  branch: main  # or master if that's your default branch
+  name: github
+  repo: Sushmitha5699/portfolio
+  branch: main  # or the branch you are using
+
 media_folder: "assets"
 public_folder: "/assets"
 
@@ -8,9 +10,9 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Home"
-        name: "home"
-        file: "index.html"  # adjust if using another file
+      - label: "Home Page"
+        name: "index"
+        file: "index.html"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Intro Text", name: "intro", widget: "text" }
