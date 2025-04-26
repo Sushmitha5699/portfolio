@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to main)
+  branch: master # Branch to update (optional; defaults to master)
 
-media_folder: "assets/uploads"  # We use the 'assets' folder for media uploads
-public_folder: "/assets/uploads"  # The public path for images
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -12,5 +12,5 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{day}}-{{month}}-{{year}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string", required: true }
-      - { label: "Blog Creator Name", name: "bloggerName", widget: "string", required: true }
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Blog Creater Name", name: "blogerName", widget: "string", required: true}
