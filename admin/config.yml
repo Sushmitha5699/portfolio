@@ -1,7 +1,8 @@
 backend:
-  name: git-gateway
-  login: auth0
+  name: github
+  repo: Sushmitha5699/portfolio
   branch: main
+  auth_scope: repo
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
