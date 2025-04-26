@@ -1,20 +1,16 @@
 backend:
   name: git-gateway
-  repo: Sushmitha5699/portfolio
-  branch: main
-  auth_scope: repo
-  login: auth0
-
+  branch: main  # or master if that's your default branch
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "homepage"
-    label: "Homepage Content"
+  - name: "pages"
+    label: "Pages"
     files:
-      - label: "Main Page"
-        name: "main"
-        file: "index.html"
+      - label: "Home"
+        name: "home"
+        file: "index.html"  # adjust if using another file
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Intro Text", name: "intro", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
