@@ -3,16 +3,16 @@ backend:
   repo: Sushmitha5699/portfolio
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/uploads" # where uploaded images go
+public_folder: "/assets/uploads"
 
 collections:
-  - name: "homepage"
-    label: "Homepage Content"
+  - name: "pages"
+    label: "Pages"
     files:
-      - label: "Main Page"
-        name: "main"
+      - label: "Home"
+        name: "home"
         file: "index.html"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Intro Text", name: "intro", widget: "text"}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
