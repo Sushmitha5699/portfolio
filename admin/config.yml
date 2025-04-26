@@ -1,17 +1,17 @@
 backend:
   name: git-gateway
-  branch: main # or 'master' if your repo uses that
+  branch: main
 
-media_folder: "assets/uploads" # where uploaded images will go inside your repo
+media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "homepage"
+    label: "Homepage Content"
     files:
-      - label: "Home"
-        name: "home"
+      - label: "Main Page"
+        name: "main"
         file: "index.html"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Intro Text", name: "intro", widget: "text" }
